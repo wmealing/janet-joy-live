@@ -22,12 +22,12 @@
        body]]))
 
 # Routes
-(route :get "/" :homer)
+(route :get "/" :home)
 
 
 (def heading-text "This changes live!!")
 
-(defn homer [request]
+(defn home [request]
   [:div {:class "tc"}
    [:h1 heading-text]
    [:h2 "Subheading"]
