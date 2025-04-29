@@ -23,6 +23,7 @@ cd janet-joy-live
 From the shell:
 
 ```sh
+jpm -l deps
 jpm -l janet -d main.janet
 ```
 
@@ -42,6 +43,7 @@ Within emacs run:
 
 ```elisp
 M-x ajsc
+M-x asjc-interactive-mode
 ```
 
 This should connect to 127.0.0.1:9365 by default.
@@ -87,8 +89,10 @@ In your editor, find this line:
 Change the string value, put your cursor at the end of the expression, and run:
 
 ```
-C-x C-e
+C-x C-e 
 ```
+
+(Or whatever ajsc-send-expression-at-point is currently set to)
 
 This sends the new value to the REPL.
 
